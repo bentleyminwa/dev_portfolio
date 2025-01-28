@@ -9,13 +9,18 @@ const Footer = () => {
   return (
     <footer className="flex flex-col items-end gap-4">
       <p className="text-xs text-gray-600">
-        &copy; {year} All rights reserved.
+        &copy; {year}{" "}
+        <span className="text-gray-800 font-semibold">Minwa Bentley. </span>All
+        rights reserved.
       </p>
 
       <ul className="flex gap-4 justify-end">
         {socials.map((social) => {
           return (
-            <li key={social.name}>
+            <li
+              key={social.name}
+              className="hover:scale-110 transition duration-300 ease-in-out"
+            >
               <Link
                 to={social.path}
                 target="blank"

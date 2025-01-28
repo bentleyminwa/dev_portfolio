@@ -6,7 +6,7 @@ const Links = () => {
 
   return (
     <nav>
-      <ul className="flex flex-col items-end gap-6 uppercase text-gray-400 text-xs font-semibold font-display">
+      <ul className="flex flex-col items-end gap-6 uppercase text-gray-400 text-xs font-semibold">
         {navlinks.map((link, index) => (
           <li
             key={index}
