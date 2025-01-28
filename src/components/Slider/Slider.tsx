@@ -3,18 +3,19 @@ import { data } from "../../assets/data/data";
 
 export const HeroSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { slides } = data;
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.slides.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [slides.length]);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden font-display">
+    <div className="relative w-full h-screen overflow-x-hidden font-display">
       {/* Slides */}
-      {data.slides.map((slide, index) => (
+      {slides.map((slide, index) => (
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${

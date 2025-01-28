@@ -1,5 +1,13 @@
+import { HeroSlider } from "../../components";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <main>
+      <header>
+        <HeroSlider />
+      </header>
+    </main>
+  );
 };
 
 export default Home;
