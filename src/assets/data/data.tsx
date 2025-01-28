@@ -1,3 +1,4 @@
+import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import { hero1, hero2, hero3 } from "../images";
 
 export const data = {
@@ -28,6 +29,46 @@ export const data = {
           "I enhance web performance to provide a better user experience.",
         buttonText: "Learn More",
       },
+    },
+  ],
+  navlinks: [
+    {
+      path: "/",
+      name: "Home",
+    },
+    {
+      path: "about",
+      name: "About",
+    },
+    {
+      path: "work",
+      name: "Work",
+    },
+    {
+      path: "contact",
+      name: "Contact",
+    },
+  ],
+  socials: [
+    {
+      name: "Github",
+      path: "https://www.github.com/",
+      icon: <FaGithub />,
+    },
+    {
+      name: "X",
+      path: "https://x.com/",
+      icon: <FaXTwitter />,
+    },
+    {
+      name: "Instagram",
+      path: "https://www.instagram.com/",
+      icon: <FaInstagram />,
+    },
+    {
+      name: "LinkedIn",
+      path: "https://www.linkedin.com/",
+      icon: <FaLinkedin />,
     },
   ],
 };
