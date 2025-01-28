@@ -3,11 +3,11 @@ import { Sidebar } from "../../components";
 
 const RootLayout = () => {
   return (
-    <main>
-      <section>
+    <main className="pt-10 min-h-screen">
+      <aside className="w-64 h-screen fixed left-0 border-r border-gray-200 ">
         <Sidebar />
-      </section>
-      <section>
+      </aside>
+      <section className="ml-[20%]">
         <Outlet />
       </section>
     </main>
