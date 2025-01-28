@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { data } from "./assets/data/data";
+import { data } from "../../assets/data/data";
 
-const HeroSlider: React.FC = () => {
+export const HeroSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -38,5 +38,3 @@ const HeroSlider: React.FC = () => {
     </div>
   );
 };
-
-export default HeroSlider;
