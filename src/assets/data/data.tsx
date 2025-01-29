@@ -71,4 +71,21 @@ export const data = {
       icon: <FaLinkedin />,
     },
   ],
+  faqs: [
+    {
+      title: "My specialties",
+      content:
+        "We offer a 30-day money back guarantee if you are not satisfied with our product.",
+    },
+    {
+      title: "What I Do",
+      content:
+        "Yes, we provide technical support to all customers during business hours.",
+    },
+    {
+      title: "Why Choose Me?",
+      content:
+        "Yes, we offer a 30-day money back guarantee if you are not satisfied with our product.",
+    },
+  ],
 };
