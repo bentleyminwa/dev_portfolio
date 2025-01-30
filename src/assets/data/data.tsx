@@ -1,5 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { hero1, hero2, hero3 } from "../images";
+import { hero1, hero2, hero3, project1, project2 } from "../images";
 
 export const data = {
   slides: [
@@ -86,6 +86,24 @@ export const data = {
       title: "Why Choose Me?",
       content:
         "Yes, we offer a 30-day money back guarantee if you are not satisfied with our product.",
+    },
+  ],
+  projects: [
+    {
+      id: 1,
+      title: "Trivio",
+      img: project1,
+      techs: ["React", "Typescript", "Tailwind", "Framer Motion"],
+      url: "https://trivio3.netlify.app/",
+      code: "https://github.com/bentleyminwa/trivio",
+    },
+    {
+      id: 2,
+      title: "Lithium3",
+      img: project2,
+      techs: ["React", "Typescript", "ContextAPI", "Tailwind", "Framer Motion"],
+      url: "https://lithium3.netlify.app/",
+      code: "https://github.com/bentleyminwa/lithium",
     },
   ],
 };
