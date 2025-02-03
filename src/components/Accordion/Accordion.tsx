@@ -10,7 +10,7 @@ const accordionVariants = {
   open: {
     y: 0,
     transition: {
-      duration: 0.2,
+      duration: 0.3,
     },
   },
 };
@@ -47,14 +47,14 @@ const Accordion = () => {
         </div>
         <div>
           {isExpanded && (
-            <motion.p
+            <motion.div
               variants={accordionVariants}
               initial="closed"
               animate="open"
-              className="mt-2 border border-gray-200 p-4 text-sm text-gray-600 tracking-wide"
+              className="mt-2 border border-gray-200 p-4 text-sm text-gray-600 tracking-wide leading-7"
             >
               {faq.content}
-            </motion.p>
+            </motion.div>
           )}
         </div>
       </div>

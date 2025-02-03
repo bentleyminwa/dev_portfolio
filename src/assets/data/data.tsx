@@ -84,19 +84,24 @@ export const data = {
   ],
   faqs: [
     {
-      title: "My specialties",
+      title: "My Journey into Tech",
       content:
-        "We offer a 30-day money back guarantee if you are not satisfied with our product.",
+        "My tech journey began in 2018 with the basics—HTML, CSS, and JavaScript—building simple websites and experimenting with styling and interactivity. As I grew more comfortable, I started exploring JavaScript deeply, which naturally led me to React. The component-based architecture and ecosystem fascinated me, pushing me to dive into state management, performance optimization, and modern frontend patterns.",
     },
     {
-      title: "What I Do",
+      title: "Tech Stack & Expertise",
       content:
-        "Yes, we provide technical support to all customers during business hours.",
+        "My expertise lies in React and its ecosystem, where I build scalable, efficient, and user-friendly applications. I work extensively with TypeScript for type safety, Redux Toolkit and Jotai for state management, and TanStack Query for optimized data fetching. My styling approach is powered by TailwindCSS. For backend and authentication, I leverage Firebase, ensuring seamless user management and real- time data handling.",
     },
     {
-      title: "Why Choose Me?",
+      title: "Why Work with Me?",
       content:
-        "Yes, we offer a 30-day money back guarantee if you are not satisfied with our product.",
+        "I bring a problem-solving mindset, attention to detail, and a strong passion for building intuitive web applications. Whether it’s crafting seamless user experiences, optimizing performance, or managing complex state, I focus on delivering high-quality, scalable solutions. If you're looking for someone who is dedicated, adaptable, and committed to writing clean, maintainable code, I’d love to collaborate!",
+    },
+    {
+      title: "What I am Currently Working On",
+      content:
+        "Right now, I’m actively developing QuickBites, a food order management system. This project allows me to refine my skills in React, TypeScript, Jotai, and TanStack Query, while also exploring better ways to manage state and optimize performance. Additionally, I’m sharpening my understanding of backend technologies to become a more well-rounded developer.",
     },
   ],
   projects: [
