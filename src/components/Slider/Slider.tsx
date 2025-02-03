@@ -1,6 +1,25 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { data } from "../../assets/data/data";
+
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    y: 50,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.5,
+    },
+  },
+};
 
 export const HeroSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -11,7 +30,7 @@ export const HeroSlider: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -30,8 +49,13 @@ export const HeroSlider: React.FC = () => {
             alt={slide.content.heading}
             className="w-full h-full object-cover object-center"
           />
-          <div className="absolute bottom-10 left-10 z-50 bg-white p-10 shadow-lg space-y-4">
-            <h1 className="text-4xl">{slide.content.heading}</h1>
+          <motion.div
+            variants={cardVariants}
+            initial="hidden"
+            animate={index === currentIndex ? "visible" : "hidden"}
+            className="absolute bottom-10 left-10 z-50 bg-white p-10 shadow-lg space-y-4"
+          >
+            <h1 className="text-4xl tracking-wide">{slide.content.heading}</h1>
             <p className="text text-gray-500 tracking-wider">
               {slide.content.description}
             </p>
@@ -41,7 +65,7 @@ export const HeroSlider: React.FC = () => {
             >
               {slide.content.buttonText}
             </button>
-          </div>
+          </motion.div>
         </div>
       ))}
     </div>
