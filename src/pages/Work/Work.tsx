@@ -9,6 +9,36 @@ const hoverVariants = {
   visible: { opacity: 0.9, transition: { duration: 0.3 } },
 };
 
+const headingVariants = {
+  hidden: {
+    opacity: 0,
+    x: -50,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.3,
+      duration: 0.5,
+    },
+  },
+};
+
+const cardVariants = {
+  hidden: {
+    opacity: 0,
+    x: -50,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.5,
+      duration: 0.7,
+    },
+  },
+};
+
 const Work = () => {
   const { projects } = data;
 
@@ -17,10 +47,20 @@ const Work = () => {
       <h5 className="uppercase text-[10px] text-gray-500 tracking-[4px] mb-5">
         portfolio
       </h5>
-      <h2 className="uppercase text-xl tracking-[4px] mb-20">My Work</h2>
+      <motion.h2
+        variants={headingVariants}
+        initial="hidden"
+        animate="visible"
+        className="uppercase text-xl tracking-[4px] mb-20"
+      >
+        My Work
+      </motion.h2>
       <section className="grid grid-cols-2 gap-10 w-full pr-10 mb-32">
         {projects.map(({ id, img, title, techs, url, code }) => (
-          <div
+          <motion.div
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
             key={id}
             className="relative w-full h-[60vh] cursor-pointer group border border-gray-200"
           >
@@ -63,7 +103,7 @@ const Work = () => {
                 </Link>
               </div>
             </motion.div>
-          </div>
+          </motion.div>
         ))}
       </section>
       <section>

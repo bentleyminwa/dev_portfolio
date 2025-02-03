@@ -30,7 +30,7 @@ export const HeroSlider: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 7000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [slides.length]);
 

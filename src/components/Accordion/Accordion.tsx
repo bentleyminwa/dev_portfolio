@@ -42,7 +42,7 @@ const Accordion = () => {
           }`}
           onClick={() => handleExpand(index)}
         >
-          <h4 className={`uppercase text-sm tracking-widest`}>{faq.title}</h4>
+          <h4 className="uppercase text-sm tracking-widest">{faq.title}</h4>
           <span className="text-xs">{icon}</span>
         </div>
         <div>
