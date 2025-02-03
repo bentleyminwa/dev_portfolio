@@ -1,24 +1,8 @@
-import { FaEnvelope, FaMap, FaPhone } from "react-icons/fa6";
-
-const contactInfos = [
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    value: "bentleyminwa@gmail.com",
-  },
-  {
-    icon: <FaPhone />,
-    title: "Phone",
-    value: "+254 743 053 331",
-  },
-  {
-    icon: <FaMap />,
-    title: "Location",
-    value: "Nairobi, Kenya",
-  },
-];
+import { data } from "../../assets/data/data";
 
 const Contact = () => {
+  const { contactInfos } = data;
+
   return (
     <main className="pt-20">
       <h5 className="uppercase text-[10px] text-gray-500 tracking-[4px] mb-5">

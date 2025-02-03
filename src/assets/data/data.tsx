@@ -1,4 +1,12 @@
-import { FaGithub, FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import {
+  FaEnvelope,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaMap,
+  FaPhone,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { hero1, hero2, hero3, project1, project2 } from "../images";
 
 export const data = {
@@ -104,6 +112,23 @@ export const data = {
       techs: ["React", "Typescript", "ContextAPI", "Tailwind", "Framer Motion"],
       url: "https://lithium3.netlify.app/",
       code: "https://github.com/bentleyminwa/lithium",
+    },
+  ],
+  contactInfos: [
+    {
+      icon: <FaEnvelope />,
+      title: "Email",
+      value: "bentleyminwa@gmail.com",
+    },
+    {
+      icon: <FaPhone />,
+      title: "Phone",
+      value: "+254 743 053 331",
+    },
+    {
+      icon: <FaMap />,
+      title: "Location",
+      value: "Nairobi, Kenya",
     },
   ],
 };
