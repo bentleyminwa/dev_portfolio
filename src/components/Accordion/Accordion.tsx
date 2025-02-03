@@ -37,12 +37,12 @@ const Accordion = () => {
         <div
           className={`flex justify-between items-center cursor-pointer py-3 px-8 border ${
             isExpanded
-              ? "bg-gray-900 border-gray-900 text-gray-50"
-              : "bg-gray-100 border-gray-200"
+              ? "bg-gray-900 border-gray-900 text-white"
+              : "bg-gray-100 border-gray-200 text-black"
           }`}
           onClick={() => handleExpand(index)}
         >
-          <h4 className="uppercase text-sm tracking-widest">{faq.title}</h4>
+          <h4 className="uppercase text-xs tracking-widest">{faq.title}</h4>
           <span className="text-xs">{icon}</span>
         </div>
         <div>

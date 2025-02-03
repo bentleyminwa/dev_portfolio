@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { FaArrowRight } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import { data } from "../../assets/data/data";
 
@@ -30,7 +31,7 @@ export const HeroSlider: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [slides.length]);
 
@@ -61,9 +62,14 @@ export const HeroSlider: React.FC = () => {
             </p>
             <button
               onClick={() => navigate(slide.content.buttonLink)}
-              className="border p-3 hover:bg-gray-50 cursor-pointer text-xs uppercase tracking-widest"
+              className="border p-3 cursor-pointer text-xs uppercase tracking-widest flex justify-center items-center gap-1 group"
             >
-              {slide.content.buttonText}
+              <span className="group-hover:gap-2">
+                {slide.content.buttonText}
+              </span>
+              <span>
+                <FaArrowRight />
+              </span>
             </button>
           </motion.div>
         </div>

@@ -17,7 +17,7 @@ export const data = {
         heading: "The Modern Web Developer",
         description:
           "I'm a passionate frontend software developer specializing in React and its ecosystem.",
-        buttonText: "more about me!",
+        buttonText: "more about me",
         buttonLink: "/about",
       },
     },
@@ -27,7 +27,7 @@ export const data = {
         heading: "Problem-Solving Through Code",
         description:
           "Every project I build is driven by purpose and intent to enhance user experience.",
-        buttonText: "view my work!",
+        buttonText: "view my work",
         buttonLink: "/work",
       },
     },
@@ -37,7 +37,7 @@ export const data = {
         heading: "Open to Opportunities",
         description:
           "I’m always looking for exciting opportunities to collaborate, learn, and grow.",
-        buttonText: "contact me!",
+        buttonText: "contact me",
         buttonLink: "/contact",
       },
     },
