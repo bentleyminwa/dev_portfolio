@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { data } from "../../assets/data/data";
 
 export const HeroSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
+
   const { slides } = data;
 
   useEffect(() => {
@@ -29,8 +32,13 @@ export const HeroSlider: React.FC = () => {
           />
           <div className="absolute bottom-10 left-10 z-50 bg-white p-10 shadow-lg space-y-4">
             <h1 className="text-4xl">{slide.content.heading}</h1>
-            <p className="text-xl text-gray-500">{slide.content.description}</p>
-            <button className="border p-3 hover:bg-gray-50 cursor-pointer">
+            <p className="text text-gray-500 tracking-wider">
+              {slide.content.description}
+            </p>
+            <button
+              onClick={() => navigate(slide.content.buttonLink)}
+              className="border p-3 hover:bg-gray-50 cursor-pointer text-xs uppercase tracking-widest"
+            >
               {slide.content.buttonText}
             </button>
           </div>

@@ -14,28 +14,31 @@ export const data = {
     {
       image: hero1,
       content: {
-        heading: "Develop Responsive Web Apps",
+        heading: "The Modern Web Developer",
         description:
-          "I design and develop responsive websites with the latest technologies.",
-        buttonText: "Learn More",
+          "I'm a passionate frontend software developer specializing in React and its ecosystem.",
+        buttonText: "more about me!",
+        buttonLink: "/about",
       },
     },
     {
       image: hero2,
       content: {
-        heading: "Creating Web-based Solutions",
+        heading: "Problem-Solving Through Code",
         description:
-          "I create web-based solutions for businesses and individuals.",
-        buttonText: "Learn More",
+          "Every project I build is driven by purpose and intent to enhance user experience.",
+        buttonText: "view my work!",
+        buttonLink: "/work",
       },
     },
     {
       image: hero3,
       content: {
-        heading: "Enhancing Web Performance",
+        heading: "Open to Opportunities",
         description:
-          "I enhance web performance to provide a better user experience.",
-        buttonText: "Learn More",
+          "I’m always looking for exciting opportunities to collaborate, learn, and grow.",
+        buttonText: "contact me!",
+        buttonLink: "/contact",
       },
     },
   ],
