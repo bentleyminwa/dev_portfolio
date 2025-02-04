@@ -61,7 +61,7 @@ const Accordion = () => {
     );
   });
 
-  return <div className="mt-10">{renderFaqs}</div>;
+  return <div className="mt-16">{renderFaqs}</div>;
 };
 
 export default Accordion;
