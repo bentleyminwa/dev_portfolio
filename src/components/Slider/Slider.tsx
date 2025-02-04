@@ -36,25 +36,25 @@ export const HeroSlider: React.FC = () => {
   }, [slides.length]);
 
   return (
-    <div className="relative w-full h-screen overflow-x-hidden">
+    <div className="relative w-full h-screen overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute top-0 left-0 h-full transition-opacity duration-1000 ease-in-out ${
+          className={`absolute top-0 left-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
             index === currentIndex ? "opacity-100" : "opacity-0"
           }`}
         >
           <img
             src={slide.image}
             alt={slide.content.heading}
-            className="w-full h-[91vh] object-cover object-center"
+            className="w-full h-full object-cover"
           />
           <motion.div
             variants={cardVariants}
             initial="hidden"
             animate={index === currentIndex ? "visible" : "hidden"}
-            className="absolute bottom-30 md:bottom-10 md:left-10 z-30 bg-white p-10 shadow-lg space-y-4 mx-4"
+            className="absolute bottom-10 z-30 bg-white p-10 shadow-lg space-y-4 mx-10"
           >
             <h1 className="text-3xl md:text-4xl tracking-wide">
               {slide.content.heading}

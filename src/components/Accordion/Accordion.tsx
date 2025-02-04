@@ -33,7 +33,7 @@ const Accordion = () => {
     const icon = <span>{isExpanded ? <FaArrowUp /> : <FaArrowDown />}</span>;
 
     return (
-      <div key={index} className="mb-2">
+      <div key={index} className="mb-3">
         <div
           className={`flex justify-between items-center cursor-pointer py-3 px-8 border ${
             isExpanded
