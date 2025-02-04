@@ -43,19 +43,19 @@ const Work = () => {
   const { projects } = data;
 
   return (
-    <main className="pt-20">
-      <h5 className="uppercase text-[10px] text-gray-500 tracking-[4px] mb-5">
+    <main className="pt-36 md:pt-20">
+      <h5 className="uppercase text-[10px] text-gray-500 tracking-[4px] mb-5 px-10 md:px-0">
         portfolio
       </h5>
       <motion.h2
         variants={headingVariants}
         initial="hidden"
         animate="visible"
-        className="uppercase text-xl tracking-[4px] mb-20"
+        className="uppercase text-xl tracking-[4px] mb-20 px-10 md:px-0"
       >
         My Work
       </motion.h2>
-      <section className="grid grid-cols-2 gap-10 w-full pr-10 mb-32">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full px-10 md:px-0 mb-32">
         {projects.map(({ id, img, title, techs, url, code }) => (
           <motion.div
             variants={cardVariants}
