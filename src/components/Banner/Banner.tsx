@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <section className="bg-gray-100 p-10 space-y-5">
       <h1 className="text-3xl md:text-4xl">Get in Touch!</h1>
-      <p className="text-gray-600 tracking-wide leading-6 text-sm">
+      <p className="text-gray-600 tracking-wide leading-6 text-sm md:text-base md:w-1/2">
         Every great collaboration starts with a simple conversation. Share your
         ideas, ask your questions, or just say hello. Let’s talk and bring
         something amazing to life together!

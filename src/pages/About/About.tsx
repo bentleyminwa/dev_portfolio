@@ -35,7 +35,7 @@ const aboutVariants = {
 const About = () => {
   return (
     <main className="pt-36 md:pt-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 md:px-0 mb-32">
         <motion.section
           variants={aboutVariants}
           initial="hidden"
@@ -56,14 +56,14 @@ const About = () => {
           </p>
           <Accordion />
         </motion.section>
-        <section className="w-full mb-10">
+        <section className="w-full flex items-center justify-center h-fit">
           <motion.img
             variants={imageVariants}
             initial="hidden"
             animate="visible"
             src={lee}
             alt=""
-            className="shadow-xl rounded-3xl"
+            className="shadow-xl rounded-3xl md:w-3/4"
           />
         </section>
       </div>
