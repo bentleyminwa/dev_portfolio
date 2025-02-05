@@ -6,6 +6,7 @@ const FormComponent = () => {
   const {
     register,
     control,
+    reset,
     formState: { errors, isSubmitting },
   } = useForm<FormFields>({
     resolver: zodResolver(schema),
@@ -15,6 +16,9 @@ const FormComponent = () => {
     <Form
       action="https://formspree.io/f/xjkgobbw"
       method="post"
+      onSubmit={() => {
+        reset();
+      }}
       control={control}
       className="flex flex-col gap-5"
     >
