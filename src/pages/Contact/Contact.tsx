@@ -7,7 +7,7 @@ const Contact = () => {
   const { contactInfos } = data;
 
   return (
-    <main className="pt-36 md:pt-20 px-10">
+    <main className="pt-36 lg:pt-20 px-10">
       <h5 className="uppercase text-[10px] text-gray-500 tracking-[4px] mb-5">
         how to reach me
       </h5>
@@ -19,7 +19,7 @@ const Contact = () => {
       >
         Get in Touch
       </motion.h2>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <section className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <FormComponent />
         <div>
           <motion.ul variants={infoVariants} initial="hidden" animate="visible">

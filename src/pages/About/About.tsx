@@ -34,13 +34,12 @@ const aboutVariants = {
 
 const About = () => {
   return (
-    <main className="pt-36 md:pt-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 md:px-0 mb-32">
+    <main className="pt-36 lg:pt-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-10 lg:px-0 mb-32">
         <motion.section
           variants={aboutVariants}
           initial="hidden"
           animate="visible"
-          className=""
         >
           <h5 className="uppercase text-[10px] text-gray-500 tracking-[4px] mb-4">
             welcome to my portfolio
@@ -63,7 +62,7 @@ const About = () => {
             animate="visible"
             src={lee}
             alt=""
-            className="shadow-xl rounded-3xl md:w-3/4"
+            className="shadow-xl rounded-3xl lg:w-3/4"
           />
         </section>
       </div>

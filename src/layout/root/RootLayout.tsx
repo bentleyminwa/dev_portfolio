@@ -5,10 +5,10 @@ import Menu from "../../components/Menu/Menu";
 const RootLayout = () => {
   return (
     <main className="font-display min-h-screen">
-      <aside className="w-64 h-screen md:fixed left-0 hidden md:flex">
+      <aside className="w-64 h-screen lg:fixed left-0 hidden lg:flex">
         <Sidebar />
       </aside>
-      <section className="md:ml-[20%]">
+      <section className="lg:ml-[20%]">
         <Menu />
         <Outlet />
       </section>
