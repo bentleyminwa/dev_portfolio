@@ -63,12 +63,12 @@ export const data = {
   socials: [
     {
       name: "Github",
-      path: "https://www.github.com/",
+      path: "https://github.com/bentleyminwa",
       icon: <FaGithub />,
     },
     {
       name: "X",
-      path: "https://x.com/",
+      path: "https://x.com/Minwa_Bentley",
       icon: <FaXTwitter />,
     },
     {
@@ -78,7 +78,7 @@ export const data = {
     },
     {
       name: "LinkedIn",
-      path: "https://www.linkedin.com/",
+      path: "https://www.linkedin.com/in/bentley-minwa/",
       icon: <FaLinkedin />,
     },
   ],
