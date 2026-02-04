@@ -4,6 +4,7 @@ import hero2 from "./hero2.jpg";
 import hero3 from "./hero3.jpg";
 import lee from "./lee.jpg";
 import project1 from "./eclipser_ai.png";
-import project2 from "./project2.png";
+import project2 from "./ziraclient.png";
+import project3 from "./zirapms.png";
 
-export { aboutPic, hero1, hero2, hero3, lee, project1, project2 };
+export { aboutPic, hero1, hero2, hero3, lee, project1, project2, project3 };
