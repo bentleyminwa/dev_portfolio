@@ -1,13 +1,12 @@
 import {
   FaEnvelope,
   FaGithub,
-  FaInstagram,
   FaLinkedin,
   FaMap,
   FaPhone,
   FaXTwitter,
 } from "react-icons/fa6";
-import { hero1, hero2, hero3, project1, project2 } from "../images";
+import { hero1, hero2, hero3, project1, project2, project3 } from "../images";
 
 export const data = {
   slides: [
@@ -72,11 +71,6 @@ export const data = {
       icon: <FaXTwitter />,
     },
     {
-      name: "Instagram",
-      path: "https://www.instagram.com/",
-      icon: <FaInstagram />,
-    },
-    {
       name: "LinkedIn",
       path: "https://www.linkedin.com/in/bentley-minwa/",
       icon: <FaLinkedin />,
@@ -115,11 +109,19 @@ export const data = {
     },
     {
       id: 2,
-      title: "Lithium3",
+      title: "Zira Homes Client",
       img: project2,
-      techs: ["React", "Typescript", "ContextAPI", "Tailwind", "Framer Motion"],
-      url: "https://lithium3.netlify.app/",
-      code: "https://github.com/bentleyminwa/lithium",
+      techs: ["React", "Typescript", "Tailwind", "Framer Motion", "ShadcnUI"],
+      url: "https://zira-homes-client.vercel.app/",
+      code: "https://github.com/bentleyminwa/Zira-PMS-Client",
+    },
+    {
+      id: 3,
+      title: "Zira Homes Admin",
+      img: project3,
+      techs: ["ReactJs", "Typescript", "NextJs", "Tailwind", "Supabase", "Prisma ORM", "ShadcnUI"],
+      url: "https://zira-homes-pm.vercel.app/",
+      code: "https://github.com/bentleyminwa/Zira-Property-Management-System",
     },
   ],
   contactInfos: [
