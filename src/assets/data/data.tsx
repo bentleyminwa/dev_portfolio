@@ -13,9 +13,9 @@ export const data = {
     {
       image: hero1,
       content: {
-        heading: "The Modern Web Developer",
+        heading: "The Modern Software Engineer",
         description:
-          "I'm a passionate frontend software developer specializing in React and its ecosystem.",
+          "Software Engineer with experience building full-stack web applications from idea to production.",
         buttonText: "more about me",
         buttonLink: "/about",
       },
@@ -80,22 +80,22 @@ export const data = {
     {
       title: "My Journey into Tech",
       content:
-        "My tech journey began in 2018 with the basics—HTML, CSS, and JavaScript—building simple websites and experimenting with styling and interactivity. As I grew more comfortable, I started exploring JavaScript deeply, which naturally led me to React. The component-based architecture and ecosystem fascinated me, pushing me to dive into state management, performance optimization, and modern frontend patterns.",
+        "My journey into tech has been driven by curiosity and a desire to build practical solutions. I started by learning the fundamentals, then grew through real-world experience by working in production environments and building full-stack products from the ground up.",
     },
     {
       title: "Tech Stack & Expertise",
       content:
-        "My expertise lies in React and its ecosystem, where I build scalable, efficient, and user-friendly applications. I work extensively with TypeScript for type safety, Redux Toolkit and Jotai for state management, and TanStack Query for optimized data fetching. My styling approach is powered by TailwindCSS. For backend and authentication, I leverage Firebase, ensuring seamless user management and real- time data handling.",
+        "I work primarily with React, TypeScript, and Next.js to build scalable, user-focused web applications, supported by Node.js, PostgreSQL, and Prisma on the backend. I have experience delivering production-ready features, integrating APIs, and designing clean, maintainable systems.",
     },
     {
       title: "Why Work with Me?",
       content:
-        "I bring a problem-solving mindset, attention to detail, and a strong passion for building intuitive web applications. Whether it’s crafting seamless user experiences, optimizing performance, or managing complex state, I focus on delivering high-quality, scalable solutions. If you're looking for someone who is dedicated, adaptable, and committed to writing clean, maintainable code, I’d love to collaborate!",
+        "I take ownership of what I build, care about clean and maintainable code, and work closely with others to ship reliable products that users actually enjoy. I combine strong engineering fundamentals with a product mindset, focusing on building scalable solutions that solve real business problems and deliver measurable value.",
     },
     {
       title: "What I am Currently Working On",
       content:
-        "Right now, I’m actively developing QuickBites, a food order management system. This project allows me to refine my skills in React, TypeScript, Jotai, and TanStack Query, while also exploring better ways to manage state and optimize performance. Additionally, I’m sharpening my understanding of backend technologies to become a more well-rounded developer.",
+        "I’m currently working on Zira UI, a component library designed to support scalable frontend applications. It emphasizes reusable components, clean APIs, and maintainable styling to improve development efficiency and UI consistency.",
     },
   ],
   projects: [
