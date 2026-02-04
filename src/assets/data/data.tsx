@@ -107,11 +107,11 @@ export const data = {
   projects: [
     {
       id: 1,
-      title: "Trivio",
+      title: "Eclipser AI Assistant",
       img: project1,
-      techs: ["React", "Typescript", "Tailwind", "Framer Motion"],
-      url: "https://trivio3.netlify.app/",
-      code: "https://github.com/bentleyminwa/trivio",
+      techs: ["React", "Javascript", "Google GenAI"],
+      url: "https://eclipser-ten.vercel.app/",
+      code: "https://github.com/bentleyminwa/eclipser_ai_assistant",
     },
     {
       id: 2,
